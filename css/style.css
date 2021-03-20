@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: NexaRust;
+  src: url("../font/nexa-rust/NexaRustSlab-BlackShadow01.otf");
+}
+
+body {
+  background-image: url("../slike/ozadje.jpg");
+}
+
+canvas {
+  background: rgba(165, 141, 34, 0.6);
+}
+
+.naslov {
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 76px;
+  background-color: rgba(165, 141, 34, 0.6);
+  border: 2px solid #ffffff;
+}
+
+.naslov span {
+  color: white;
+  display: block;
+}
+
+.text1 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+  position: relative;
+  animation: text 3s 1;
+  font-family: NexaRust;
+}
+
+.text2 {
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-family: NexaRust;
+}
+
+@keyframes text {
+  30% {
+    letter-spacing: 15px;
+    margin-bottom: -5px;
+  }
+}
+
+.razmak {
+  width: 100%;
+  height: 20px;
+}
+
+#gosenica {
+  top: 10px;
+  width: 200px;
+  height: 150px;
+  background-image: url("../slike/mstile-150x150.png");
+  margin: auto;
+  padding-left: 100px;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
+
+button {
+  display: block;
+  margin: auto;
+  font-size: 10px;
+  background-color: #9fc901;
+  padding: 8px 15px;
+  font-family: "Fantasy";
+  border-radius: 70%;
+  transition-duration: 0.4s;
+  color: #000000;
+  font-family: NexaRust;
+  letter-spacing: 2px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(165, 141, 34, 0.8);
+  color: #ffffff;
+}
+
+#konec {
+  width: 484px;
+  height: 300px;
+  background-image: url("../slike/btf_66.gif");
+  visibility: hidden;
+  margin: auto;
+}
+
+#footer {
+  color: white;
+  position: relative;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="slike/favicon-32x32.png"
+    />
+    <title>Evolution</title>
+  </head>
+
+  <body onload="maze();">
+    <div class="naslov">
+      <span class="text1">WELCOME</span>
+      <span class="text2">TO THE EVOLUTION</span>
+    </div>
+    <div class="razmak"></div>
+    <div id="gosenica"></div>
+    <dic class="maze">
+      <button id="solve" onClick="animation();">BEGIN</button>
+      <canvas width="484px" height="484px" id="maze"></canvas>
+      <script src="js/maze.js"></script>
+    </div>
+    <div id="konec"></div>
+    <div id="footer">
+      <p>&copy Rok Cvjetković</p>
+    </div>
+  </body>
+</html>
